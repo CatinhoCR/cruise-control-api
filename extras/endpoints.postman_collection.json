@@ -1,0 +1,598 @@
+{
+	"info": {
+		"_postman_id": "4522028e-e11a-40a3-beff-e65f78e71f2c",
+		"name": "Time Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Cato506",
+									"type": "text"
+								},
+								{
+									"key": "fullname",
+									"value": "Andrés Castillo Quesada",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "otro@microgardenmusic.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "puravida123",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}register",
+							"host": [
+								"{{url}}register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "username",
+											"value": "Cato506",
+											"type": "text"
+										},
+										{
+											"key": "fullname",
+											"value": "Andrés Castillo Quesada",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "cato@microgardenmusic.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "puravida123",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}register",
+									"host": [
+										"{{url}}register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization , X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11d-t5vAOl5ZjaTWl02dz2QJIpNOVTA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 25 Mar 2021 07:04:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Se ha guardado el usuario.\",\n    \"user\": {\n        \"_id\": \"605c36040117216804bdd5f0\",\n        \"username\": \"Cato506\",\n        \"fullname\": \"Andrés Castillo Quesada\",\n        \"email\": \"cato@microgardenmusic.com\",\n        \"image\": \"null\",\n        \"role\": \"1\",\n        \"password\": \"$2b$10$lQ0psglYTx./iAp3x740B.x2rFjw6uZw4cMHcueA6UGJuoFuJfa/.\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "cato@microgardenmusic.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "puravida123",
+									"type": "text"
+								},
+								{
+									"key": "getHash",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}login?",
+							"host": [
+								"{{url}}login"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "email",
+											"value": "cato@microgardenmusic.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "puravida123",
+											"type": "text"
+										},
+										{
+											"key": "getHash",
+											"value": "true",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{url}}login?",
+									"host": [
+										"{{url}}login"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Authorization , X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method"
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "GET, POST, OPTIONS, PUT, DELETE"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "227"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e3-W1FLKWkCEgyNeORkKSwxYGi4+Q0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 25 Mar 2021 07:06:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2MDVjMzYwNDAxMTcyMTY4MDRiZGQ1ZjAiLCJ1c2VybmFtZSI6IkNhdG81MDYiLCJyb2xlIjoiMSIsImlhdCI6MTYxNjY1NTg2OCwiZXhwIjoxNjE2NjU5NDY4fQ.KxIlMFEMEqxGro02IEB-5MynKE4K6mCfFYNoJG_fQ0U\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}user/605c36040117216804bdd5f0",
+							"host": [
+								"{{url}}user"
+							],
+							"path": [
+								"605c36040117216804bdd5f0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "filterBy",
+									"value": "role",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}users",
+							"host": [
+								"{{url}}users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}delete-user/605c37ae0117216804bdd5f2",
+							"host": [
+								"{{url}}delete-user"
+							],
+							"path": [
+								"605c37ae0117216804bdd5f2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "Cato",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "fullname",
+									"value": "EsCato",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345611",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "cato@microgardenmusic.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "isActive",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "role",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}update-user/605c36040117216804bdd5f0",
+							"host": [
+								"{{url}}update-user"
+							],
+							"path": [
+								"605c36040117216804bdd5f0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notes",
+			"item": [
+				{
+					"name": "Get All Notes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}notes",
+							"host": [
+								"{{url}}notes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Note",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "My new note",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Preview content of the note",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel itaque ut consequatur possimus. Sequi consequatur dignissimos ratione dolorem, facilis, debitis at similique ullam ea porro minus dolore, eaque ut quia!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}note",
+							"host": [
+								"{{url}}note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Note",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}note/605c670e8f23df705483f0ce",
+							"host": [
+								"{{url}}note"
+							],
+							"path": [
+								"605c670e8f23df705483f0ce"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Note",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "{{auth}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}delete-note/605c6265c9f9434d42afd26b",
+							"host": [
+								"{{url}}delete-note"
+							],
+							"path": [
+								"605c6265c9f9434d42afd26b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:8000/"
+		},
+		{
+			"key": "auth",
+			"value": "JWT Token"
+		}
+	]
+}
